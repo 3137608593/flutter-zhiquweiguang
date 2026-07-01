@@ -4,7 +4,6 @@ import 'package:timeago/timeago.dart' as timeago;
 import '../config/constants.dart';
 import '../config/theme.dart';
 import '../models/models.dart';
-import 'image_viewer.dart';
 
 class PostCard extends StatelessWidget {
   final Post post;
@@ -33,7 +32,7 @@ class PostCard extends StatelessWidget {
           children: [
             if (post.coverImage != null)
               GestureDetector(
-                onTap: () => ImageViewerDialog.show(context, Constants.resolveUrl(post.coverImage) ?? ''),
+                onTap: onTap,
                 child: Hero(
                   tag: 'post_cover_${post.id}',
                   child: ClipRRect(
