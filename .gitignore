@@ -21,7 +21,10 @@ ios/Flutter/Flutter.framework
 ios/Flutter/Flutter.podspec
 ios/Runner/GeneratedPluginRegistrant.*
 
-# Misc
+# Reference docs - exclude from repo
+参考技术文献/
+
+# Temp scripts
 *.pyc
 _fix.py
 _sign.py
@@ -32,6 +35,3 @@ server-deploy/
 # OS
 .DS_Store
 Thumbs.db
-
-# Reference docs
-参考技术文献/
