@@ -1,0 +1,37 @@
+﻿# Flutter
+.dart_tool/
+.packages
+build/
+*.iml
+.idea/
+.vscode/
+*.lock
+
+# Android
+android/.gradle/
+android/app/build/
+android/local.properties
+android/key.properties
+android/zhiquweiguang.jks
+
+# iOS
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Runner/GeneratedPluginRegistrant.*
+
+# Misc
+*.pyc
+_fix.py
+_sign.py
+_fix_msgs.py
+deploy-package/
+server-deploy/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Reference docs
+参考技术文献/

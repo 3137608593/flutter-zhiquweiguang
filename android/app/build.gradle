@@ -1,0 +1,38 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace = "cn.chenlinnaiyi.zhiquweiguang"
+    compileSdk = 35
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+        freeCompilerArgs += ['-Xskip-metadata-version-check']
+    }
+
+    defaultConfig {
+        applicationId = "cn.chenlinnaiyi.zhiquweiguang"
+        minSdk = 24
+        targetSdk = 35
+        versionCode = 69
+        versionName = "0.9.0"
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
